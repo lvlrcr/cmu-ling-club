@@ -1,0 +1,155 @@
+/* Still getting used to CSS :p */
+
+/* CMU brand colors: https://www.cmu.edu/brand/brand-guidelines/visual-identity/colors.html
+
+Core colors
+
+- Carnegie red: #C41230
+- Black: black
+- Iron gray: #6D6E71
+- Steel gray: #E0E0E0
+
+Secondary colors (must be used together with Carnegie red): 
+
+Tartan Palette
+- Scots rose: #EF3A47
+- Gold thread: #FDB515
+- Green thread: #009647
+- Teal thread: #008F91
+- Blue thread: #043673
+- Highlands sky blue: #007BC0
+
+Campus Palette
+- Machinery hall tan: #BCB49E
+- Kittanning brick beige: #E4DAC4
+- Hornbostel teal: #1F4C4C
+- Palladian green: #719F94
+- Weaver blue: #182C4B
+- Skibo red: #941120
+*/
+
+/* Partial components */
+
+body {
+  font-family: sans-serif; /* Can heavily customize fonts later to taste */
+  line-height: 1.5;
+  margin: 0;
+  font-size: large;
+}
+
+/* Banner at the top with CMU colors */
+header {
+  background: #BCB49E;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5%;
+}
+.site-logo {
+  width: 7.5%;
+  height: auto;
+  padding: 1%;
+}
+#site-title {
+  color: white;
+  font-size: 400%;
+}
+
+/* Scroll and Page links both within the header */
+nav {
+  background: #E0E0E0;
+  margin: 0;
+  padding: 0;
+}
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0.25em;
+
+  list-style-type: none;
+  font-size: x-large;
+}
+#nav-list li {
+  padding: 0em 2em;
+}
+#nav-separator {
+  padding: 0em 1em;
+}
+#nav-list a {
+  text-decoration: none;
+  color: black;
+}
+#nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Banner at the bottom with whatever footer stuff,
+and also socials conditioned if not on the homepage */
+footer {
+  background: #6D6E71;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+
+main {
+  padding: 1% 5em;
+  /* Background scuffed right now;
+     would like a continuous high-res paper texture in the end */
+  background-image: url("/assets/nordwood-themes-R53t-Tg6J4c-unsplash.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  background-color: #E4DAC4;
+  margin: 1% 0;
+  border: none 1px black;
+  border-radius: 2.5em;
+  padding: 2.5%;
+
+  width: 75%;
+}
+section h1 {
+  margin-top: 0;
+
+  text-align: center;
+  font-size: xx-large;
+}
+
+#intro {
+  text-align: center;
+  font-size: large;
+}
+
+#socials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-auto-flow: column;
+  
+  text-align: center;
+}
+/* center everything in each cell horizontally and vertically */
+.socials-grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials-grid-cell iframe {
+  height: 100%;
+}

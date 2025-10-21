@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
   <head>
     <meta charset="UTF-8" />
     <title>CMU Linguistics: Home</title>
     <script type="module" src="/assets/script.js"></script>
-    <link rel="stylesheet" src="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
 
   <body>
     <!-- should strongly consider using partial components for header, nav, and footer -->
     <header class="site-header">
-      <img src="/assets/cmuwug.png" alt="CMU wug logo" />
-      <h1 class="site-title">Carnegie Mellon Linguistics Club</h1>
+      <img class="site-logo" src="/assets/cmuwug.png" alt="CMU wug logo" />
+      <h1 id="site-title">Carnegie Mellon Linguistics Club</h1>
     </header>
 
     <nav class="site-nav">
@@ -21,63 +21,99 @@
         <li><a href="/officers/">About us</a></li>
         <!-- the following only for this homepage -->
         <div id="nav-separator">|</div>
-        <li><a href="#meetings">Meetings▾</a></li>
-        <li><a href="#socials">Socials▾</a></li>
+        <li><a id="scroll-to-meetings" href="#meetings">Meetings ▾</a></li>
+        <li><a id="scroll-to-socials" href="#socials">Socials ▾</a></li>
       </ul>
     </nav>
 
     <main>
-      <section id="intro">
-        <h1>What we do</h1>
-        Our goal is to foster interest in languages and linguistics <br />
-        and encourage students of all majors <br />
-        to learn more about the field and applications of linguistics. <br />
-        For more info, check out our
-        <a href="#meetings">meetings</a>
-        and <a href="/events/">events</a>!
-      </section>
+      <div class="sections-container">
+        <section id="intro">
+          <!-- debating between this and something more colloquial like "What we do" -->
+          <h1>Mission statement</h1>
+
+          Our goal is to foster interest in languages and linguistics <br />
+          and encourage students of all majors <br />
+          to learn more about the field and applications of linguistics. <br />
+          For more info, check out our
+          <a href="#meetings">meetings</a>
+          and <a href="/events/">events</a>!
+        </section>
+        
+        <section id="meetings">
+          <h1>Meetings</h1>
+          
+          General body meetings are <u>every Friday from 5pm to 7pm in Baker Hall 235A!</u> <br />
+          All are welcome! <br />
+          Our traditions include:
+          <ul id="meeting-contents">
+            <li>
+              theming around a subfield of linguistics,
+              <!-- include dynamic element that gives examples of subfields? -->
+            </li>
+            <li>
+              the
+              <a href="https://nascl.rc.nau.edu/gramle/" target="_blank">Gramle</a>,
+              <small>
+                which is like Wordle but with
+                <a href="https://home.cc.umanitoba.ca/~robh/howto.html" target="_blank">spectrograms</a>,
+              </small>
+            </li>
+            <li>sweet treats,</li>
+            <li>and/or more!</li>
+          </ul>
+
+          <div>[google calendar embed here]</div>
+        </section>
+
+        <section id="socials">
+          <h1>Socials</h1>
+          
+          <div id="socials-grid">
+
+            <div class="socials-grid-cell">
+              <img src="assets/cmulinguistics_qr.png" style="max-width: 50%; height: auto; "/>
+            </div>
+
+            <div class="socials-grid-cell">
+              <p>
+                Follow us on
+                <a href="https://www.instagram.com/cmulinguistics/" target="_blank">Instagram</a>!
+              </p>
+            </div>
+
+            <div class="socials-grid-cell">
+              <!-- love this discord embed -->
+              <iframe src="https://discord.com/widget?id=696173239021469800&theme=dark"
+                width="350"
+                height="300"
+                allowtransparency="true" 
+                frameborder="0" 
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                id="discord-widget"></iframe>
+            </div>
+
+            <div class="socials-grid-cell">
+              <p>
+                Join our
+                <a href="https://discord.com/invite/C4p4hDK4z8" target="_blank">Discord server</a>
+                for info about meetings, events, or just to chat about linguistics!
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
       
-      <section id="meetings">
-        <h1>Meetings</h1>
-        
-        General body meetings are every Friday from 5pm to 7pm in Baker Hall 235A! <br />
-        All are welcome! <br />
-        Our traditions include:
-        <ul id="meeting-contents">
-          <li>
-            theming around a subfield of linguistics,
-            <!-- include dynamic element that gives examples of subfields? -->
-          </li>
-          <li>
-            the
-            <a href="https://nascl.rc.nau.edu/gramle/" target="_blank">Gramle</a>,
-            <small>
-              which is like Wordle but with
-              <a href="https://home.cc.umanitoba.ca/~robh/howto.html" target="_blank">spectrograms</a>,
-            </small>
-          </li>
-          <li>sweet treats,</li>
-          <li>and/or more!</li>
-        </ul>
-
-        <div>[google calendar embed here]</div>
-      </section>
-
-      <section id="socials">
-        <h1>Socials</h1>
-        Follow us on
-        <a href="https://www.instagram.com/cmulinguistics/" target="_blank">Instagram</a>!
-        
-        <br />
-
-        Join our
-        <a href="https://discord.com/invite/C4p4hDK4z8" target="_blank">Discord server</a>
-        for info about meetings, events, or just to chat about linguistics!
-      </section>
     </main>
 
     <footer class="site-footer">
-
+      [licensing, credits, etc. here]
+      <small>
+        Photo by <a href="https://unsplash.com/@nordwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NordWood Themes</a> on <a href="https://unsplash.com/photos/white-wall-paint-with-black-line-R53t-Tg6J4c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </small>
     </footer>
 
   </body>

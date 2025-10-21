@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <title>CMU Linguistics: Events</title>
     <script type="module" src="/assets/script.js"></script>
-    <link rel="stylesheet" src="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
 
   <body>
     <!-- should strongly consider using partial components for header, nav, and footer -->
     <header class="site-header">
-      <img src="/assets/cmuwug.png" alt="CMU wug logo" />
-      <h1 class="site-title">Carnegie Mellon Linguistics Club</h1>
+      <img img class="site-logo" src="/assets/cmuwug.png" alt="CMU wug logo" />
+      <h1 id="site-title">Carnegie Mellon Linguistics Club</h1>
     </header>
 
     <nav class="site-nav">
@@ -23,43 +23,54 @@
     </nav>
 
     <main>
-      <!-- make these sections/lists (or just past events) collapsible? -->
-      
-      <section id="upcoming events">
-        <h1>Upcoming events</h1>
 
-        <div id="upcoming-events-list">
-          <div class="event">
-            [sample div class="event" to be styled]
-            <img class="event-visual" src="[event visual]" />
-            <p class="event-description">
-
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="past-events">
-        <h1>Past events</h1>
-
-        <div class="event">
-          <div class="event">
-            [sample div class="event" to be styled]
-            <!-- here, the event visual can also be pictures taken from the event -->
-            <img class="event-visual" src="[event visual]" />
-            <p class="event-description">
-
-            </p>
-          </div>
+      <div class="sections-container">
+        <!-- make these sections/lists (or just past events) collapsible? -->
           
-        </div>
-      </section>
+        <section id="upcoming events">
+          <h1>Upcoming events</h1>
+
+          <div id="upcoming-events-list">
+            <div class="event">
+              [sample div class="event" to be styled]
+              <img class="event-visual" src="[event visual]" />
+              <p class="event-description">
+
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="past-events">
+          <h1>Past events</h1>
+
+          <div class="event">
+            <div class="event">
+              [sample div class="event" to be styled]
+              <!-- here, the event visual can also be pictures taken from the event -->
+              <img class="event-visual" src="[event visual]" />
+              <p class="event-description">
+
+              </p>
+            </div>
+            
+          </div>
+        </section>
+
+      </div>
+      
     </main>
 
     <footer class="site-footer">
-      <a href="https://www.instagram.com/cmulinguistics/" target="_blank">Instagram</a>
-      <a href="https://discord.com/invite/C4p4hDK4z8" target="_blank">Discord</a>
+      <div id="footer-socials">
+        <a href="https://www.instagram.com/cmulinguistics/" target="_blank">Instagram</a>
+        <a href="https://discord.com/invite/C4p4hDK4z8" target="_blank">Discord</a>
+      </div>
+      [licensing, credits, etc. here]
+      <small>
+        Photo by <a href="https://unsplash.com/@nordwood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NordWood Themes</a> on <a href="https://unsplash.com/photos/white-wall-paint-with-black-line-R53t-Tg6J4c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </small>
     </footer>
 
   </body>
