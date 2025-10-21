@@ -136,6 +136,10 @@ section h1 {
   font-size: large;
 }
 
+#gcal {
+  border-radius: 20px;
+}
+
 #socials-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,4 +156,35 @@ section h1 {
 }
 .socials-grid-cell iframe {
   height: 100%;
+}
+
+/* Events */
+
+
+
+/* About us */
+
+#exec-bios {
+  display: flex;
+  flex-direction: column;
+}
+.officer-bio {
+  display: flex;
+  flex-direction: row;
+  flex: 1fr 20%;
+}
+.headshot-cell {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 2%;
+}
+.bio-text {
+  background: #6D6E71;
+  color: white;
+  flex-grow: 1;
+  border-radius: 20px;
+  padding: 2%;
 }

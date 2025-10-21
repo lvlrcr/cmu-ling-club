@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>CMU Linguistics: Home</title>
-    <script type="module" src="/assets/script.js"></script>
-    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" src="/index.js"></script>
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
@@ -17,8 +17,8 @@
     <nav class="site-nav">
       <ul id="nav-list">
         <li><a href="/">Home</a></li>
-        <li><a href="/events/">Events</a></li>
-        <li><a href="/officers/">About us</a></li>
+        <li><a href="/events.html">Events</a></li>
+        <li><a href="/aboutus.html">About us</a></li>
         <!-- the following only for this homepage -->
         <div id="nav-separator">|</div>
         <li><a id="scroll-to-meetings" href="#meetings">Meetings ▾</a></li>
@@ -36,8 +36,8 @@
           and encourage students of all majors <br />
           to learn more about the field and applications of linguistics. <br />
           For more info, check out our
-          <a href="#meetings">meetings</a>
-          and <a href="/events/">events</a>!
+          <a id="scroll-to-meetings-2" href="#meetings">meetings</a>
+          and <a href="/events.html">events</a>!
         </section>
         
         <section id="meetings">
@@ -63,7 +63,12 @@
             <li>and/or more!</li>
           </ul>
 
-          <div>[google calendar embed here]</div>
+          <div>
+            <iframe src="https://calendar.google.com/calendar/embed?src=cmulinguisticsclub%40gmail.com&ctz=America%2FNew_York"
+              style="border: 0" width="800" height="600" frameborder="0" scrolling="no"
+              id="gcal">
+            </iframe>
+          </div>
         </section>
 
         <section id="socials">
