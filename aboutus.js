@@ -28,11 +28,11 @@ function addOfficer(officer) {
 }
 
 const officers = [
-  { title: "President", name: "Lou Feng", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
-  { title: "Social Media / PR", name: "Riley Lawrence", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
-  { title: "Secretary", name: "Helen Amon", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
-  { title: "Events Coordinator", name: "Noor Warner", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
-  { title: "Treasurer", name: "Leo Frankel", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
-  { title: "Historian / Webmaster", name: "Larry Zhang", headshotImg: "/assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "President", name: "Lou Feng", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "Social Media / PR", name: "Riley Lawrence", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "Secretary", name: "Helen Amon", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "Events Coordinator", name: "Noor Warner", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "Treasurer", name: "Leo Frankel", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
+  { title: "Historian / Webmaster", name: "Larry Zhang", headshotImg: "assets/cmuwug.png", bioText: "[bio here]" },
 ]
 officers.forEach(addOfficer)
